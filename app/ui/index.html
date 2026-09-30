@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Olist Flow - Control Tower</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<section id="login">
+  <form class="login-card" id="loginForm" autocomplete="on">
+    <h1>Olist Flow</h1>
+    <p>Intelligent Logistics Optimization &amp; Control Tower</p>
+    <label for="u">Username</label><input id="u" name="username" autocomplete="username" required>
+    <label for="p">Password</label><input id="p" name="password" type="password" autocomplete="current-password" required>
+    <div class="err" id="loginErr" role="alert"></div>
+    <button class="btn" style="width:100%;margin-top:6px">Sign in</button>
+  </form>
+</section>
+<div id="app" class="hidden">
+  <nav>
+    <div class="brand"><b>Olist Flow</b><span>LOGISTICS DECISION ENGINE</span></div>
+    <div id="tabs"></div>
+    <div class="spacer"></div>
+    <button class="tab" id="themeBtn" type="button">Toggle theme</button>
+    <div class="who" id="who"></div>
+    <button class="tab" id="logout" type="button">Sign out</button>
+  </nav>
+  <main id="view" aria-live="polite"></main>
+</div>
+<div id="tip" class="hidden" role="tooltip"></div>
+<div id="toast" aria-live="assertive"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

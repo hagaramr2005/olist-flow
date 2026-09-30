@@ -1,0 +1,4 @@
+# Only needed to rebuild the calibration artifact from the raw Olist CSVs (scripts/build_calibration.py).
+# The running service does not need pandas or the CSVs.
+-r requirements.txt
+pandas>=2.2
